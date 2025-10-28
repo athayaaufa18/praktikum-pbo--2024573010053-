@@ -12,7 +12,7 @@ Laporan ini dibuat untuk mendokumentasikan hasil praktikum Dasar Pemrograman Jav
 
 ---
 ## 2. Praktikum
-### Praktikum 1 — Variabel dan Tipe Data
+### Praktikum 1 : Variabel dan Tipe Data
 #### Dasar Teori
 Variabel adalah wadah untuk menyimpan data dengan tipe tertentu. Java memiliki dua kategori utama :
 * tipe data primitif (
@@ -67,11 +67,11 @@ Langkah 1: Variabel dan tipe data
 
 
 * int → bilangan bulat: umur = 20.
-* double → bilangan pecahan/desimal: tinggi = 175.5.
-* char → satu karakter: grade = 'A'.
-* boolean → nilai logika: lulus = true.
-* String → kumpulan karakter/teks: nama = "John Doe".  
-➡Bagian ini menunjukkan bagaimana Java mendukung berbagai tipe data.
+* double : bilangan pecahan/desimal: tinggi = 175.5.
+* char : satu karakter: grade = 'A'.
+* boolean : nilai logika: lulus = true.
+* String : kumpulan karakter/teks: nama = "John Doe".  
+Bagian ini menunjukkan bagaimana Java mendukung berbagai tipe data.
 ---
 2. Menampilkan Nilai Variabel
    * System.out.println("Nama: " + nama);
@@ -86,7 +86,7 @@ Output yang ditampilkan:
 - Tinggi: 175.5 cm
 - Grade: A
 - Lulus: true  
-➡Di sini digunakan string concatenation (+) untuk menggabungkan teks dan variabel agar bisa ditampilkan.
+Di sini digunakan string concatenation (+) untuk menggabungkan teks dan variabel agar bisa ditampilkan.
 ---
 3. Operasi Aritmatika
    * int a = 10;
@@ -97,12 +97,12 @@ Output yang ditampilkan:
    * System.out.println("a / b = " + (a / b));
    * System.out.println("a % b = " + (a % b));
 
-(+) → penjumlahan → 10 + 3 = 13  
-(-) → pengurangan → 10 - 3 = 7  
-(*) → perkalian → 10 * 3 = 30  
-(/) → pembagian bulat → 10 / 3 = 3 (karena int, bukan pecahan)  
-(%) → sisa hasil bagi → 10 % 3 = 1  
-➡Menunjukkan operator aritmatika di Java.
+(+) → penjumlahan : 10 + 3 = 13  
+(-) → pengurangan : 10 - 3 = 7  
+(*) → perkalian : 10 * 3 = 30  
+(/) → pembagian bulat : 10 / 3 = 3 (karena int, bukan pecahan)  
+(%) → sisa hasil bagi : 10 % 3 = 1  
+Menunjukkan operator aritmatika di Java.
 ---
 4. Casting Tipe Data
    * double nilaiDouble = 9.8;
@@ -112,8 +112,8 @@ Output yang ditampilkan:
 
 
 nilaiDouble = 9.8 (tipe double).  
-(int) nilaiDouble → konversi paksa (casting) → hasil 9 (bagian desimal dibuang).
-➡Menunjukkan type casting manual (explicit casting).
+(int) nilaiDouble > konversi paksa (casting) > hasil 9 (bagian desimal dibuang).
+Menunjukkan type casting manual (explicit casting).
 ---
 5. Automatic Promotion (Promosi Otomatis Tipe Data)
    * byte byteVar = 50;
@@ -123,7 +123,7 @@ nilaiDouble = 9.8 (tipe double).
 
 Operasi aritmatika di Java dengan tipe lebih kecil (byte, short) otomatis dipromosikan ke int.  
 Jadi hasilnya 50 + 100 = 150 dengan tipe data int.  
-➡Ini contoh automatic type promotion di Java.
+Ini contoh automatic type promotion di Java.
 
 ---
 - Kesimpulan  
@@ -136,7 +136,7 @@ Automatic promotion ketika operasi melibatkan tipe data berbeda.
 Program ini cocok sebagai contoh pengenalan variabel, operator, dan casting di Java.
 ---
 
-### Praktikum 2 - Input/Output dan Scanner
+### Praktikum 2 : Input/Output dan Scanner
 #### Dasar Teori
 Untuk membaca input dari pengguna dalam Java, kita menggunakan class Scanner yang terdapat dalam
 package java.util. Scanner menyediakan berbagai method untuk membaca berbagai tipe data:
@@ -177,15 +177,15 @@ Wajib di-import supaya bisa digunakan.
 Membuat objek bernama input dari kelas Scanner.  
 System.in artinya input akan dibaca dari keyboard.
 
-➡Ini adalah langkah awal agar program bisa menerima data dari user.
+Ini adalah langkah awal agar program bisa menerima data dari user.
 
 ---
 3. Membaca Input String
    System.out.print("Masukkan nama Anda: ");
    String nama = input.nextLine();
 
-System.out.print → menampilkan teks ke layar tanpa ganti baris.  
-input.nextLine() → membaca satu baris teks yang diketik user.  
+System.out.print > menampilkan teks ke layar tanpa ganti baris.  
+input.nextLine() > membaca satu baris teks yang diketik user.  
 Disimpan dalam variabel String nama.
 
 Contoh input:
@@ -197,7 +197,7 @@ Maka variabel nama = "Syakila Athaya Aufa".
    System.out.print("Masukkan umur Anda: ");
    int umur = input.nextInt();
 
-input.nextInt() → membaca input berupa bilangan bulat.  
+input.nextInt() > membaca input berupa bilangan bulat.  
 Disimpan ke variabel int umur.
 
 Contoh input:
@@ -209,7 +209,7 @@ Maka variabel umur = 19.
    System.out.print("Masukkan tinggi Anda (cm): ");
    double tinggi = input.nextDouble();
 
-input.nextDouble() → membaca input berupa bilangan desimal.  
+input.nextDouble() > membaca input berupa bilangan desimal.  
 Disimpan ke variabel double tinggi.
 
 Contoh input:
@@ -224,11 +224,11 @@ Maka variabel tinggi = 160.
    System.out.println("Tinggi: " + tinggi + " cm");
 
 Hasil input user ditampilkan kembali dengan format rapi.  
-\n → untuk membuat baris baru (newline).
+\n : untuk membuat baris baru (newline).
 
 Contoh output:
 
-=== DATA ANDA ===  
+=== DATA ANDA ===   
 Nama: Syakila Athaya Aufa  
 Umur: 19 tahun  
 Tinggi: 160 cm
@@ -241,15 +241,15 @@ Best practice di Java ketika selesai menggunakan input.
 
 * Kesimpulan
 
--Program InputOutputDemo berfungsi untuk:  
--Membaca input dari user melalui keyboard (teks, angka bulat, dan angka desimal).  
--Menyimpan input tersebut dalam variabel sesuai tipe datanya (String, int, double).  
--Menampilkan data kembali sebagai output di layar.
+* Program InputOutputDemo berfungsi untuk:  
+* Membaca input dari user melalui keyboard (teks, angka bulat, dan angka desimal).  
+* Menyimpan input tersebut dalam variabel sesuai tipe datanya (String, int, double).  
+* Menampilkan data kembali sebagai output di layar.
 
-➡Program ini adalah contoh dasar Input & Output (I/O) di Java menggunakan Scanner.
+Program ini adalah contoh dasar Input & Output (I/O) di Java menggunakan Scanner.
 
 ---
-### Praktikum 3 - Struktur control: Percabangan
+### Praktikum 3 : Struktur control, Percabangan
 #### Dasar Teori
 
 Struktur kontrol percabangan dalam Java adalah mekanisme untuk mengatur alur eksekusi program berdasarkan suatu kondisi. Dengan percabangan, program bisa mengambil keputusan dan menjalankan perintah yang berbeda sesuai input atau keadaan tertentu.
@@ -406,7 +406,7 @@ Program menampilkan kategori sesuai dengan rentang umur yang dimasukkan pengguna
 
 ---
 
-### Praktikum 4 - Struktur Control: Perulangan
+### Praktikum 4 : Struktur Control, Perulangan
 #### Dasar Teori
 Dalam pemrograman, perulangan (looping) adalah salah satu konsep dasar yang sangat penting. Loop digunakan untuk menjalankan serangkaian instruksi secara berulang tanpa harus menuliskan kode yang sama berulang-ulang. Dengan perulangan, program bisa lebih ringkas, efisien, dan mudah dipelihara.
 
